@@ -22,7 +22,7 @@ Here are the files and their main content:
 - Introduction_to_Data_Science_project.ipynb: This file contains the initial cleaning of the raw dataset and checking some correlations to help with modelling in the future.
 - feature_building_preprocessing.ipynb: This file contains further cleaning of the data, engineering many new columns from existing data, deciding the train/val/test split, identifying outliers, optimizing data types and creating a full dataset ready for modelling with a sample dataset.
 - modelling.ipynb: This file contains all the modelling work: splitting the data, removing outliers, establishing baselines, removing unneeded columns or ones that can potential leak the target, training Ridge and Lasso regression models as well as a LightGBM model and finding the best parameters for them, comparing the models and baselines by MAE and RMSE, identifying the feature importance and the final evaluation of the models as well as conclusions
-- analysis.ipynb ???: - SIIA KIRJUTAME SS KUI ANALUUSI FAIL OLEMAS
+- plotting.ipynb: - This file contains further exploration of the data and especially the new engineered features. There are many plots comparing features to price and also grouping them to different ranges and paired with other features. 
 - IDS2026_HW10.ipynb: Reporting our work so far during HW10.
 
 
@@ -31,4 +31,4 @@ Here are the files and their main content:
 - Run the IDS2026_HW07.ipynb notebook, then Introduction_to_Data_Science_project.ipynb. This gives us the initially cleaned dataset called 'cleaned_flights_for_modelling.parquet'.
 - Run feature_building_preprocessing.ipynb. This uses the file created in the last step and creates 'features.parquet' which contains all the engineered features and the sample 'features_sample.parquet' which contains about 10% of the rows for experiments. Run this notebook before the modelling one.
 - Run modelling.ipynb. This notebook does all the modelling. There is a switch at the top to either use the sample or full dataset. All the modelling results come from here. Note: training the models took hours, so using the sample is better advised. The full dataset gives the full results, but takes a very long time to run.
-- Run analysis.ipynb ???: this notebook contains the further exploration of the constructed features.ipynb dataset and finds different interesting relationships between attributes and plots them. You can run this before the modelling notebook as well.
+- Run plotting.ipynb: this notebook contains the further exploration of the constructed features.ipynb dataset and finds different interesting relationships between attributes and plots them. You can run this before the modelling notebook as well.
